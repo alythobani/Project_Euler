@@ -1,2 +1,2 @@
 # Project_Euler
-Solutions to Project Euler problems
+These are my solutions to the Project Euler problems found on https://projecteuler.net/ , written in C++ code.
