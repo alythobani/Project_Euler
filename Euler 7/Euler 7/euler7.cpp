@@ -10,13 +10,14 @@
  What is the 10 001st prime number? */
 
 #include <iostream>
+using namespace std;
 
-int n = 10001;
 
 int isPrime(int i) {
     int isprime = 1;
     int x = 3;
-    while (x <= i/3) {
+    while (x <= i/x) {
+//        printf("Checking if divisible by %d; checking up to %d.\n", x, i/x);
         if (i % x == 0) {
             isprime = 0;
             break;
@@ -28,15 +29,19 @@ int isPrime(int i) {
 
 int main(int argc, const char * argv[])
 {
+    int n;
+    cout << "Which prime do you want to know? ";
+    cin >> n;
     int a = 2;
     int i = 3;
     while (a < n + 1) {
         if (isPrime(i)) {
             a++;
+            printf("The %dth prime is %d!\n", a-1, i);
         }
         i = i + 2;
     }
-    printf("%dth number is %d", n, i - 2);
+    //printf("The %dth prime is %d!\n", n, i - 2);
     return 0;
 }
 
