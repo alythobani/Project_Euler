@@ -15,7 +15,7 @@
 
 #include <iostream>
 
-int numbertofactorial = 50000;
+int numbertofactorial = 10000; //confirmed works for at least 50000
 
 void printCurrentProduct(int* product, int size) {
     
